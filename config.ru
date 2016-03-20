@@ -1,2 +1,2 @@
-require './RollToDodge.rb'
-run RollToDodge
+require './RollToDodge'
+run RollToDodge.rb
