@@ -1,2 +1,2 @@
-require './sinatra'
+require './RollToDodge'
 run Sinatra::Application
