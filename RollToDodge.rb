@@ -10,8 +10,6 @@ bot = Discordrb::Commands::CommandBot.new("jceloria@icloud.com", "suckit123", "/
 #  event.respond "Your test worked- even though fletcher is in bed"
 #end
 
-#forcing reboot of app #2
-
 bot.message(from: not!("Iblan"), containing: "Suck it Ian!") do |event| #Will probably make this cooler. You'll see.
   event.respond "#{event.author.mention} fires an arrow at Ian!"
 end
