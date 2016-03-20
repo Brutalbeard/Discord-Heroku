@@ -181,3 +181,9 @@ bot.command(:gifme, description: "Gives you a random gif based off what you type
 end
 
 bot.run :async
+
+loop do
+  # looped code goes here:
+  message = ExternalService.last_queued_message
+  bot.send_message(channel_id, message)
+end
