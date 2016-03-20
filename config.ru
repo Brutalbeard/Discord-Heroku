@@ -1,2 +1,2 @@
 require './RollToDodge'
-run RollToDodge.rb
+run Sinatra::Application
