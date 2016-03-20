@@ -1,1 +1,1 @@
-worker: bundle exec ruby config.ru
+web: bundle exec ruby config.ru
