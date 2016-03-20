@@ -1,1 +1,1 @@
-worker: bundle exec rackup config.ru
+web: bundle exec ruby config.ru
