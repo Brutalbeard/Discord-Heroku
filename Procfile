@@ -1,1 +1,1 @@
-worker: bundle exec ruby RollToDodgerb
+worker: bundle exec ruby RollToDodge.rb
