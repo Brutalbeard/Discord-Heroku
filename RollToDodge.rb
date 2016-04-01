@@ -1,9 +1,11 @@
+require 'sinatra'
 require 'discordrb' #uber fancy and useable library
 require 'json'
 require 'open-uri'
 require 'pstore'
+require './creds.rb'
 
-bot = Discordrb::Commands::CommandBot.new("jceloria@icloud.com", "suckit123", "/", {advanced_functionality: false}) #credentials for login, the last string is the thing you have to type to run our commands.
+bot = Discordrb::Commands::CommandBot.new($email, $pass, $starter, {advanced_functionality: false}) #credentials for login, the last string is the thing you have to type to run our commands.
 
 
 #bot.message(containing: "test") do |event| #obvious test message. Leaving it in here as 'message' works slightly differently from command.
