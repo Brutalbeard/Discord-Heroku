@@ -1,10 +1,6 @@
 run lambda { |env| [200, {'Content-Type'=>'text/plain'}, StringIO.new("Hello World!\n")] }
-configure do
-    . . .
-    require 'redis'
-    uri = URI.parse(ENV["REDISCLOUD_URL"])
-    $redis = Redis.new(:host => uri.host, :port => uri.port, :password => uri.password)
-    . . .
+if ENV["REDISCLOUD_URL"]
+    $redis = Redis.new(:url => ENV["REDISCLOUD_URL"])
 end
 require './RollToDodge'
 require './creds'
